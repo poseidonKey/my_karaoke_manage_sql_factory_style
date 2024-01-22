@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:my_karaoke_manage/views/my_home.dart';
 
 void main() => runApp(
       const ProviderScope(
@@ -15,14 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'My Like Songs',
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('My Like Songs'),
-        ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
-      ),
+      home: MyHome(),
     );
   }
 }
